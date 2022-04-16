@@ -1,77 +1,46 @@
 /* Body: */
 
-body {
-  background: rgb(58, 58, 58);
-  color: white;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-/* Header: */
-
-header {
-  background-color: black;
-  background-image: url("/images/index.png");
-  background-size:
-  height: 400px;
-  padding: 20px;
-  text-align: center;
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: grey;
+    display: grid;
+    place-content: center;
+    height: 100vh;
 }
-
-header a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-top: 40px;
-  text-align: center;
+/* ======================== */
+.hamburger{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-
-header .logo a {
-  background-image: url("/images/index.png");
-  background-size: 100px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 89px;
-  position: relative;
-  text-indent: -99999999px;
-  top: -46px;
-  width: 100px;
-
+/* General styles for the lines */
+.hamburger .line{
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin-block: 10px; /*Adds separation to the bottom and the bottom*/
+    border-radius: 4px;
+    transition: transform .5s,
+    opacity .25s;
 }
-
-/* Section: */
-
-section {
-  background: white;
-  color: gray;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
+/* Selecting the lines individually to add different effects when the active class is added to the hamburger menu.*/
+.hamburger.active .line:nth-child(1){
+    transform: translateY(13px)
+    rotate(45deg); /*Moves down this line 13px and rotates it 45 degrees to create the X*/
 }
-
-div {
-  background: blue;
-  margin: auto;
-  width: 100px;
+.hamburger.active .line:nth-child(2){
+    opacity: 0; /*Hides this line.*/
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-/* Footer: */
-
-footer {
-  background: black;
-  color: gray;
-  margin: auto;
-  padding: 10px 20px;
-}
+.hamburger.active .line:nth-child(3){
+    transform: translateY(-13px)
+    rotate(-45deg); /*Moves up this line 13px and rotates it -45 degrees to create the X*/
+}  

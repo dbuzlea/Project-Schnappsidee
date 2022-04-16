@@ -3,32 +3,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page!</title>
     <link rel="stylesheet" href="/css/styles.css">
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="website.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li class="logo"><a href="website.html">Website Logo</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-      </nav>
-      <h1></h1>
+    <button type="button" class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
 
-    </header>
-    <section>
-      <div>REPAIR</div>
-      <div>SUPPORT</div>
-      <div>REFURBISHED</div>
-    </section>
-    <section>lower-section</section>
-    <footer>7541 S Mingo Road Tulsa, OK 74133 • 555-555-5555 • db@dbuzlea.com</footer>
+    <script>
+      const hamburgerMenu = document.querySelector('.hamburger');
 
+      const menuIsActive = () => {
+        hamburgerMenu.classList.toggle('active');
+      };
+      hamburgerMenu.addEventListener('click', menuIsActive);
+    </script>
 
   </body>
 </html>
