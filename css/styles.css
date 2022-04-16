@@ -1,0 +1,77 @@
+/* Body: */
+
+body {
+  background: rgb(58, 58, 58);
+  color: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header: */
+
+header {
+  background-color: black;
+  background-image: url("");
+  background-size:
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+  text-align: center;
+}
+
+header .logo a {
+  background-image: url("");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 89px;
+  position: relative;
+  text-indent: -99999999px;
+  top: -46px;
+  width: 100px;
+
+}
+
+/* Section: */
+
+section {
+  background: white;
+  color: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+div {
+  background: blue;
+  margin: auto;
+  width: 100px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Footer: */
+
+footer {
+  background: black;
+  color: gray;
+  margin: auto;
+  padding: 10px 20px;
+}
