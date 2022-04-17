@@ -76,7 +76,7 @@
     position: absolute;
     content: "";
     background: #fff;
-     background: white;
+     background: white; /*Change colors around buttons*/
     /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
     width: 104%;
     height: 110%;
