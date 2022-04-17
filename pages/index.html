@@ -4,28 +4,30 @@
 <!-- Herro -->
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page!</title>
+    
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
 
   <body>
-    <button type="button" class="hamburger">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </button>
-
-    <script>
-      const hamburgerMenu = document.querySelector('.hamburger');
-
-      const menuIsActive = () => {
-        hamburgerMenu.classList.toggle('active');
-      };
-      hamburgerMenu.addEventListener('click', menuIsActive);
-    </script>
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+        <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Gallery</a></li>
+  <li><a href="#">Feedback</a></li>
+  </ul>
+  </div>
+  <div class="content">
+        <div class="title">
+  Freelance Coding Portfolio</div>
+  <p>
+  Contact us for consultations</p>
+  </div>
 
   </body>
 </html>
+
