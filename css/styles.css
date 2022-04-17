@@ -76,7 +76,7 @@
     position: absolute;
     content: "";
     background: #fff;
-     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+     background: white;
     /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
     width: 104%;
     height: 110%;
